@@ -8,21 +8,21 @@
 ```sh
 user@host:~$ ddev list
 ┌──────────────────┬─────────┬────────────────────────────────────┬───────────────────────────────┬───────────┐
-│ NAME             │ STATUS  │ LOCATION                  │ URL                           │ TYPE      │
+│ NAME             │ STATUS  │ LOCATION                           │ URL                           │ TYPE      │
 ├──────────────────┼─────────┼────────────────────────────────────┼───────────────────────────────┼───────────┤
-│ project1         │ OK      │ /PATH/TO/project1         │ https://project1.ddev.site    │ php       │
+│ project1         │ OK      │ /PATH/TO/project1                  │ https://project1.ddev.site    │ php       │
 ├──────────────────┼─────────┼────────────────────────────────────┼───────────────────────────────┼───────────┤
-│ project2         │ stopped │ /PATH/TO/project2         │ https://project2.ddev.site    │ php       │
+│ project2         │ stopped │ /PATH/TO/project2                  │ https://project2.ddev.site    │ php       │
 ├──────────────────┼─────────┼────────────────────────────────────┼───────────────────────────────┼───────────┤
-│ project3         │ stopped │ /PATH/TO/project3         │ https://project3.ddev.site    │ php       │
+│ project3         │ stopped │ /PATH/TO/project3                  │ https://project3.ddev.site    │ php       │
 ├──────────────────┼─────────┼────────────────────────────────────┼───────────────────────────────┼───────────┤
-│ project4         │ stopped │ /PATH/TO/project4         │ https://project4.ddev.site    │ php       │
+│ project4         │ stopped │ /PATH/TO/project4                  │ https://project4.ddev.site    │ php       │
 ├──────────────────┼─────────┼────────────────────────────────────┼───────────────────────────────┼───────────┤
-│ project5         │ stopped │ /PATH/TO/project5         │ https://project5.ddev.site    │ php       │
+│ project5         │ stopped │ /PATH/TO/project5                  │ https://project5.ddev.site    │ php       │
 ├──────────────────┼─────────┼────────────────────────────────────┼───────────────────────────────┼───────────┤
-│ project6         │ stopped │ /PATH/TO/project6         │ https://project6.ddev.site    │ php       │
+│ project6         │ stopped │ /PATH/TO/project6                  │ https://project6.ddev.site    │ php       │
 ├──────────────────┼─────────┼────────────────────────────────────┼───────────────────────────────┼───────────┤
-│ project7         │ stopped │ /PATH/TO/project7         │ https://project7.ddev.site    │ php       │
+│ project7         │ stopped │ /PATH/TO/project7                  │ https://project7.ddev.site    │ php       │
 ├──────────────────┼─────────┼────────────────────────────────────┼───────────────────────────────┼───────────┤
 │ Router           │ stopped │ ~/.ddev                            │                               │ original: │
 │                  │         │                                    │                               │  v1.21.4  │
