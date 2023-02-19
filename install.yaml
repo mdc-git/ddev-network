@@ -3,6 +3,11 @@ name: ddev-network
 pre_install_actions:
 - |
   #ddev-nodisplay
+  if [ -z $(which jq) ]; then
+    echo "This addon depends on jq in your PATH. https://stedolan.github.io/jq/download/" && exit 2
+  fi
+- |
+  #ddev-nodisplay
   JSON=$(cat << EOF
   # Map any external links to the router here.
   services:
@@ -17,4 +22,4 @@ pre_install_actions:
   EOF
   )\n"
   done
-  echo -e "$JSON" > docker-compose.network.yaml
+  echo -e "$JSON" > .ddev/docker-compose.network.yaml
