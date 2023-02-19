@@ -43,3 +43,10 @@ services:
       - 'ddev-router:project6.ddev.site'
       - 'ddev-router:project7.ddev.site'
 ```
+
+## Usage
+
+```
+ddev get mdc-git/ddev-network
+ddev restart
+```
