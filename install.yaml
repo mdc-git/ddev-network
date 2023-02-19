@@ -6,6 +6,7 @@ pre_install_actions:
   if [ -z $(which jq) ]; then
     echo "This addon depends on jq in your PATH. https://stedolan.github.io/jq/download/" && exit 2
   fi
+- env | grep DDEV 
 - |
   #ddev-nodisplay
   JSON=$(cat << EOF
