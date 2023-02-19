@@ -15,7 +15,7 @@ pre_install_actions:
       external_links:\n
   EOF
   )
-  LIST=$(ddev list -j | grep -v $DDEV_PRIMARY_URL | jq .raw[].primary_url | sed -e 's#^"https\?://#ddev-router:#g' -e 's#"##g')
+  LIST=$(ddev list -j | jq .raw[].primary_url | grep -v $DDEV_PRIMARY_URL | sed -e 's#^"https\?://#ddev-router:#g' -e 's#"##g')
   for URL in $LIST; do
     JSON+="$(cat << EOF
         - '$URL'
