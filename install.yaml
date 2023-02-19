@@ -1,0 +1,20 @@
+name: ddev-network
+
+pre_install_actions:
+- |
+  #ddev-nodisplay
+  JSON=$(cat << EOF
+  # Map any external links to the router here.
+  services:
+    web:
+      external_links:\n
+  EOF
+  )
+  LIST=$(ddev list -j | jq .raw[].primary_url | sed -e 's#^"https\?://#ddev-router:#g' -e 's#"##g')
+  for URL in $LIST; do
+    JSON+="$(cat << EOF
+        - '$URL'
+  EOF
+  )\n"
+  done
+  echo -e "$JSON" > docker-compose.network.yaml
