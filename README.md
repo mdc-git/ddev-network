@@ -29,7 +29,7 @@ user@host:~$ ddev list
 └──────────────────┴─────────┴────────────────────────────────────┴───────────────────────────────┴───────────┘
 ```
 
-will produce the following output assuming you run it in `project1` :
+will create a file `.ddev/docker-compose.network.yaml` with the following content assuming you run it in `project1` :
 
 ```yaml
 # Map any external links to the router here.
